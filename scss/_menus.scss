@@ -1,0 +1,24 @@
+#menus {
+  h2 {
+    font-size: $font-clamp;
+    margin-bottom: 55px;
+  }
+  p {
+    font-size: $small-font-clamp;
+  }
+  background: $green;
+  padding: $padding-clamp;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  .menus-right {
+    align-self: flex-end;
+  }
+
+  img {
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+    width: 40%;
+  }
+}

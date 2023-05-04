@@ -1,0 +1,68 @@
+#team {
+  padding: $padding-clamp;
+  background: $green;
+  color: white;
+  h2 {
+    font-size: $font-clamp;
+    margin-bottom: 55px;
+  }
+
+  .team-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    .team-member {
+      > img {
+        border-radius: 22px;
+        width: 375px;;
+      }
+      width: 375px;
+      .team-member-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        background: $green;
+        border-radius: 22px;
+        position: relative;
+        top: -30px;
+        padding: 2rem;
+        gap: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        span:nth-child(1) {
+          font-size: 1.5rem;
+          font-weight: 800;
+          text-align: center;
+        }
+        span:nth-child(2) {
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .team-member-card--sm {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .team-row {
+      .team-member {
+        width: 90%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

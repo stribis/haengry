@@ -1,0 +1,34 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: $green;
+  color: white;
+  min-height: 580px;
+  padding: 3rem $padding-clamp;
+  background-image: url('../images/illustrations/undraw_the_world_is_mine_re_j5cr_1.svg');
+  background-position: 2rem 4rem;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  
+
+  h2 {
+    font-size: $font-clamp;
+    margin-bottom: 55px;
+
+    img {
+      height: $font-clamp;
+    }
+  }
+  p {
+    width: 50%;
+    font-size: $small-font-clamp;
+  }
+  @media only screen and (max-width: 900px) {
+    background-size: contain;
+    background-position: left bottom;
+    p {
+      width: 90%;
+    }
+  }
+}

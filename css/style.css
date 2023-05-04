@@ -1,0 +1,315 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Archivo Black";
+  src: url(../fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 800;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+/* Colors: */
+/* Font/text values */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+header, section, footer {
+  width: 100%;
+}
+
+#main-header {
+  min-height: 100vh;
+  background: #FF703D;
+  background-image: url("../images/photos/Portrait_Group_3.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+#main-header img {
+  margin-top: 4rem;
+  margin-left: 3rem;
+  height: 160px;
+}
+@media only screen and (max-width: 600px) {
+  #main-header img {
+    height: auto;
+    width: 80%;
+    margin: 4rem auto;
+    display: block;
+  }
+}
+
+#angebot {
+  background: #FF703D;
+  padding: clamp(1.5rem, 8vw, 7rem);
+}
+#angebot h2 {
+  font-size: clamp(1.5rem, 8vw, 4.5rem);
+  hyphens: auto;
+  margin-bottom: 3rem;
+}
+#angebot figure {
+  width: 500px;
+}
+#angebot figure img {
+  width: 500px;
+}
+#angebot figcaption {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 900px) {
+  #angebot figure {
+    width: 90%;
+  }
+  #angebot figure img {
+    width: 100%;
+  }
+  #angebot figcaption {
+    font-size: 1.5rem;
+  }
+}
+#angebot .angebot-grid {
+  display: flex;
+  flex-basis: 50%;
+  gap: clamp(1.5rem, 8vw, 7rem);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#menus {
+  background: #264F1A;
+  padding: clamp(1.5rem, 8vw, 7rem);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+#menus h2 {
+  font-size: clamp(1.5rem, 8vw, 4.5rem);
+  margin-bottom: 55px;
+}
+#menus p {
+  font-size: clamp(1rem, 6vw, 2.5rem);
+}
+#menus .menus-right {
+  align-self: flex-end;
+}
+#menus img {
+  width: 40%;
+}
+@media only screen and (max-width: 900px) {
+  #menus img {
+    display: none;
+  }
+}
+
+#hero-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 880px;
+  background: #FF703D;
+  background-image: url("../images/illustrations/undraw_environment_iaus.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding: clamp(1.5rem, 8vw, 7rem);
+}
+#hero-heading p {
+  font-family: "Archivo Black", sans-serif;
+  width: 50%;
+  font-size: clamp(1.5rem, 8vw, 4.5rem);
+}
+@media only screen and (max-width: 900px) {
+  #hero-heading {
+    background-size: contain;
+  }
+  #hero-heading p {
+    font-size: clamp(1rem, 6vw, 2.5rem);
+    min-height: 450px;
+    width: 90%;
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #264F1A;
+  color: white;
+  min-height: 580px;
+  padding: 3rem clamp(1.5rem, 8vw, 7rem);
+  background-image: url("../images/illustrations/undraw_the_world_is_mine_re_j5cr_1.svg");
+  background-position: 2rem 4rem;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+#about h2 {
+  font-size: clamp(1.5rem, 8vw, 4.5rem);
+  margin-bottom: 55px;
+}
+#about h2 img {
+  height: clamp(1.5rem, 8vw, 4.5rem);
+}
+#about p {
+  width: 50%;
+  font-size: clamp(1rem, 6vw, 2.5rem);
+}
+@media only screen and (max-width: 900px) {
+  #about {
+    background-size: contain;
+    background-position: left bottom;
+  }
+  #about p {
+    width: 90%;
+  }
+}
+
+#team {
+  padding: clamp(1.5rem, 8vw, 7rem);
+  background: #264F1A;
+  color: white;
+}
+#team h2 {
+  font-size: clamp(1.5rem, 8vw, 4.5rem);
+  margin-bottom: 55px;
+}
+#team .team-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#team .team-row .team-member {
+  width: 375px;
+}
+#team .team-row .team-member > img {
+  border-radius: 22px;
+  width: 375px;
+}
+#team .team-row .team-member .team-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background: #264F1A;
+  border-radius: 22px;
+  position: relative;
+  top: -30px;
+  padding: 2rem;
+  gap: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#team .team-row .team-member .team-member-card span:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+#team .team-row .team-member .team-member-card span:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#team .team-member-card--sm {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+}
+#team .team-member-card--sm img {
+  width: 34px;
+  height: 34px;
+}
+@media only screen and (max-width: 900px) {
+  #team .team-row .team-member {
+    width: 90%;
+  }
+  #team .team-row .team-member img {
+    width: 100%;
+  }
+}
+
+#main-footer {
+  padding: 4rem clamp(1.5rem, 8vw, 7rem);
+  display: flex;
+  flex-wrap: wrap;
+  background: #FF703D;
+  justify-content: space-between;
+}
+#main-footer .footer-left {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main-footer .footer-left ul {
+  list-style: none;
+}
+#main-footer .footer-left ul li {
+  font-size: 1.3rem;
+  margin: 0.8rem 0;
+  margin-right: 4rem;
+}
+#main-footer .footer-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+#main-footer .footer-left ul li:nth-child(1) {
+  font-size: 1.5rem;
+  font-family: "Archivo Black", sans-serif;
+}
+#main-footer .footer-right {
+  font-size: 2rem;
+  text-align: right;
+}
+#main-footer .footer-right ul {
+  list-style: none;
+}
+#main-footer .footer-right ul li {
+  margin-bottom: 2rem;
+}
+#main-footer .footer-right a {
+  text-decoration: none;
+  color: black;
+}
+#main-footer .footer-sm {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+#main-footer .footer-sm a {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: black;
+}
+#main-footer .footer-sm img {
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (max-width: 1200px) {
+  #main-footer .footer-right {
+    text-align: center;
+    margin-top: 3rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

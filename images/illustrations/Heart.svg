@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.06 119.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ee794c;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path id="Icon_awesome-heart" data-name="Icon awesome-heart" class="cls-1" d="m122.85,8.14c-14.56-12.41-36.22-10.18-49.58,3.61l-5.23,5.4-5.24-5.4C49.46-2.04,27.77-4.27,13.21,8.14-2.73,21.92-4.49,46.01,9.28,61.96c.42.49.85.96,1.3,1.43l51.42,53.09c3.18,3.32,8.45,3.44,11.78.26.09-.08.17-.17.26-.26l51.42-53.09c14.57-15.2,14.06-39.34-1.14-53.91-.48-.46-.96-.9-1.46-1.33h0Z"/>
+  </g>
+</svg>

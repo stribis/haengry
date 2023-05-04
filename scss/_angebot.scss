@@ -1,0 +1,44 @@
+#angebot {
+  h2 {
+    font-size: $font-clamp;
+    hyphens: auto;
+    margin-bottom: 3rem;
+  }
+  background: $orange;
+  padding: $padding-clamp;
+
+
+  figure{
+    width: 500px;
+    img {
+      width: 500px;
+    }
+  }
+
+  figcaption {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    figure{
+      width: 90%;
+      img {
+        width: 100%;
+      }
+    }
+    figcaption { 
+      font-size: 1.5rem;
+    }
+  }
+  .angebot-grid {
+    display: flex;
+    flex-basis: 50%;
+    gap: $padding-clamp;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+
+}
