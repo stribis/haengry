@@ -1,0 +1,49 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Archivo Black";
+  src: url(../fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 800;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+/* Colors: */
+/* Font/text values */
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  background: #FF703D;
+  line-height: 1.5;
+  padding: clamp(1rem, 15vw, 5rem);
+  font-size: clamp(1rem, 8vh, 1.5rem);
+}
+
+a {
+  color: gold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+h1 {
+  hyphens: auto;
+  font-size: clamp(2rem, 10vh, 4rem);
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 7vw, 2rem);
+}/*# sourceMappingURL=klein_text.css.map */
