@@ -12,6 +12,9 @@
       list-style: none;
       li {
         a {
+          &:hover {
+            text-decoration: underline;
+          }
           text-decoration: none;
           color: black;
         }
@@ -36,6 +39,9 @@
     font-size: 2rem;
     text-align: right;
     a {
+      &:hover {
+        text-decoration: underline;
+      }
       text-decoration: none;
       color: black;
     }
