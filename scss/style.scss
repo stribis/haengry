@@ -1,37 +1,46 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@import 'fonts';
+@import "fonts";
 
-@import 'variables';
-
+@import "variables";
 
 // Typography
 body {
   font-family: $body-font;
+  background: $orange;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $heading-font;
 }
 
-header, section, footer {
+header,
+section,
+footer {
   width: 100%;
 }
 
-@import 'header';
+@import "header";
 
-@import 'angebot';
+@import "angebot";
 
-@import 'menus';
+@import "menus";
 
-@import 'hero';
+@import "hero";
 
-@import 'about';
+@import "about";
 
-@import 'team';
+@import "team";
 
-@import 'footer';
+@import "footer";

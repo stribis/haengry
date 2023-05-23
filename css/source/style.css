@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,36 +8,44 @@
 
 @font-face {
   font-family: "Archivo Black";
-  src: url(../fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
+  src: url(../../fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  src: url(../../fonts/Roboto/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 800;
-  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  src: url(../../fonts/Roboto/Roboto-Bold.ttf);
 }
 /* Colors: */
 /* Font/text values */
 body {
   font-family: "Roboto", sans-serif;
+  background: #ff703d;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Archivo Black", sans-serif;
 }
 
-header, section, footer {
+header,
+section,
+footer {
   width: 100%;
 }
 
 #main-header {
   min-height: 100vh;
-  background: #FF703D;
-  background-image: url("../images/photos/Portrait_Group_3.webp");
+  background: #ff703d;
+  background-image: url("../../images/photos/Portrait_Group_3.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -55,7 +65,7 @@ header, section, footer {
 }
 
 #angebot {
-  background: #FF703D;
+  background: #ff703d;
   padding: clamp(1.5rem, 8vw, 7rem);
 }
 #angebot h2 {
@@ -94,7 +104,7 @@ header, section, footer {
 }
 
 #menus {
-  background: #264F1A;
+  background: #264f1a;
   padding: clamp(1.5rem, 8vw, 7rem);
   color: white;
   display: flex;
@@ -124,8 +134,8 @@ header, section, footer {
   justify-content: flex-start;
   align-items: center;
   min-height: 880px;
-  background: #FF703D;
-  background-image: url("../images/illustrations/undraw_environment_iaus.svg");
+  background: #ff703d;
+  background-image: url("../../images/illustrations/undraw_environment_iaus.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
   padding: clamp(1.5rem, 8vw, 7rem);
@@ -151,11 +161,11 @@ header, section, footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background: #264F1A;
+  background: #264f1a;
   color: white;
   min-height: 580px;
   padding: 3rem clamp(1.5rem, 8vw, 7rem);
-  background-image: url("../images/illustrations/undraw_the_world_is_mine_re_j5cr_1.svg");
+  background-image: url("../../images/illustrations/undraw_the_world_is_mine_re_j5cr_1.svg");
   background-position: 2rem 4rem;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -183,7 +193,7 @@ header, section, footer {
 
 #team {
   padding: clamp(1.5rem, 8vw, 7rem);
-  background: #264F1A;
+  background: #264f1a;
   color: white;
 }
 #team h2 {
@@ -208,7 +218,7 @@ header, section, footer {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  background: #264F1A;
+  background: #264f1a;
   border-radius: 22px;
   position: relative;
   top: -30px;
@@ -252,7 +262,7 @@ header, section, footer {
   padding: 4rem clamp(1.5rem, 8vw, 7rem);
   display: flex;
   flex-wrap: wrap;
-  background: #FF703D;
+  background: #ff703d;
   justify-content: space-between;
 }
 #main-footer .footer-left {
